@@ -1,35 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { axiosAuth } from '..utilities/axiosAuth';
+import { axiosAuth } from '../utilities/axiosAuth';
 import Friend from './Friend.js';
 
-
 const Friends = () => {
-    const [firends, setFriends] = useState([]);
+    const [friends, setFriends] = useState([]);
     console.log("friends", friends)
 
-     useEffect(() => {
-         getFriends();
-     }, [])
+    useEffect(() => {
+        getFriends();
+    }, [])
 
 
-const getFriends = () => {
-    axiosAuth().get("friends")
-    .then(res => {
-        console.log(res);
-        setFriends(res.data)})
-    .catch(err => console.log(err));
+    const getFriends = () => {
+        axiosAuth().get("/friends")
+            .then(res => {
+                console.log(res);
+                setFriends(res.data)})
+            .catch(err => console.log(err));
     }
-       
-return(
-    <div className="friends-list">
-      {friends.map((friend, id) =>
-       <Friend key={id}
-       name:{friend.name}
-       age={friend.age}
-       email={friend.email}/>)}
-    </div>
 
-   );
+    return (
+        <div className="friends-list">
+            {friends.map((friend, id) =>
+            <Friend key={id} 
+                    name={friend.name} 
+                    age={friend.age} 
+                    email={friend.email}/>)}  
+                   
+        </div> 
+    );
 }
 
-export default Friends;
+export default Friends; 
