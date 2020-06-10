@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background-color: #d5d6c3;
-  height: 1500px;
+  background-color: #db9ae0;
+  height: 100%;
 }
 
 .App-logo {
@@ -42,13 +42,13 @@
 .nav {
   max-width: 500px;
   height: 50px;
+  margin-left: 50px;
   margin: auto;
   padding-top: 20px;
   margin-bottom: 50px;
-  background-color: #b8ba9c;
-  border: 5px solid white;
-  outline-style: solid;
-  outline-color: #b8ba9c;
+  background-color: #f3edf2;
+  border: 5px solid black;
+  box-shadow: 10px 10px 5px grey;
 }
 
 a {
@@ -60,6 +60,7 @@ a {
 }
 
 .friends-list {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   margin: 50px;
@@ -67,17 +68,35 @@ a {
 }
 
 .card {
+  box-shadow: 10px 10px 5px grey;
   margin: 20px;
   width: 250px;
   height: 200px;
-  background-color: rgb(126, 91, 126);
-  border: 50px solid #d6cbd8;
+  background-color: rgb(213, 162, 247);
+  border: 50px solid #f1e9ef;
   outline-style: solid;
   outline-color: rgb(15, 14, 15);
+  margin-left: 4em;
+}
+.card:hover {
+  box-shadow: 10px 10px 5px grey;
+  margin: 20px;
+  width: 250px;
+  height: 200px;
+  background-color: rgb(213, 162, 247);
+  border: 50px solid #f1e9ef;
+  outline-style: solid;
+  outline-color: rgb(15, 14, 15);
+  margin-left: 4em;
+  border: 1px solid pink;
+  -webkit-transition: .3s;
+  transition: .3s;
+  transform: rotate(360deg);
 }
 
 h2,
 h3 {
+  
   color: black(79, 47, 67);
   font-weight: 700;
   margin-top: 10px;
