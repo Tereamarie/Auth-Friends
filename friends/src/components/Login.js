@@ -69,14 +69,28 @@ class Login extends React.Component {
     };
   
     login = e => {
+      // 1). make a .POST request to the server
+//the server will "authenticate" the user based on their credentials they provide in the form 
+//If they can be authenticated the server will return a 'token'
+
+// DRIVER NAVIGATOR: What is  the first step in this function? 1). you  import axios
+// 2). You create a POST request to the server.
+
+
+//What is the first step in this process 
+// 1). iMPORT AXIOS from 'axios';
+//2). create a .post request to the server.
+//3). use the credentials in the axios call
       e.preventDefault();
       axiosAuth()
         .post('/login', this.state.credentials)
+        /* we will first console.log(res) here initial code at the .then(res => console.log(res))*/
         .then(res => {
           localStorage.setItem('token', res.data.payload);
           // redirect to the apps main page?
           this.props.history.push('/protected');
         })
+        // Also at the .catch(err => console.log(err));
         .catch(err => console.log(err));
     };
   

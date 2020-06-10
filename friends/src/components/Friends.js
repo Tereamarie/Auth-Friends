@@ -12,8 +12,10 @@ const Friends = () => {
 
 
     const getFriends = () => {
+         // fetch initial data - but it' protected! Use axiosWithAuth to send the token on the header of the request//
         axiosAuth().get("/friends")
             .then(res => {
+                //res.data.data//
                 console.log(res);
                 setFriends(res.data)})
             .catch(err => console.log(err));
