@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #4263a7;
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,13 +38,14 @@
     transform: rotate(360deg);
   }
 }
+
 .nav {
   max-width: 500px;
   height: 50px;
   margin: auto;
   padding-top: 20px;
   margin-bottom: 50px;
-  background-color: gray;
+  background-color: #b8ba9c;
   border: 5px solid white;
   outline-style: solid;
   outline-color: #b8ba9c;
@@ -54,7 +55,7 @@ a {
   margin: 20px;
   font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(180, 190, 176);
+  color: black;
   font-weight: bold;
 }
 
@@ -69,16 +70,18 @@ a {
   margin: 20px;
   width: 250px;
   height: 200px;
-  background-color: black;
-  border: 50px solid #8f9179;
+  background-color: rgb(126, 91, 126);
+  border: 50px solid #d6cbd8;
   outline-style: solid;
-  outline-color:whitesmoke ;
+  outline-color: rgb(15, 14, 15);
 }
 
 h2,
 h3 {
-  
-  font-weight: 900;
+  color: black(79, 47, 67);
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .login,
@@ -90,7 +93,6 @@ h3 {
   padding-top: 40px;
   background-color: ivory;
   height: 500px;
-  
 }
 
 .login-button {
@@ -101,7 +103,7 @@ h3 {
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 800;
-  color: #141413;
+  color: #7d8242;
 }
 
 .add-friend {
@@ -111,8 +113,7 @@ h3 {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 800;
-  color: black;
- 
+  color: #7d8242;
 }
 
 input {
@@ -130,5 +131,5 @@ input {
   margin: 20px;
   font-size: 1.5rem;
   font-weight: 800;
-  color: #080807;
+  color: #7d8242;
 }
