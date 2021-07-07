@@ -1,0 +1,155 @@
+.App {
+  text-align: center;
+  background-color: #db9ae0;
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav {
+  max-width: 500px;
+  height: 50px;
+  margin-left: 50px;
+  margin: auto;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  background-color: #f3edf2;
+  border: 5px solid black;
+  box-shadow: 10px 10px 5px grey;
+}
+
+a {
+  margin: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.friends-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  padding-left: 50px;
+}
+
+.card {
+  box-shadow: 10px 10px 5px grey;
+  margin: 20px;
+  width: 250px;
+  height: 200px;
+  background-color: rgb(213, 162, 247);
+  border: 50px solid #f1e9ef;
+  outline-style: solid;
+  outline-color: rgb(15, 14, 15);
+  margin-left: 4em;
+}
+.card:hover {
+  box-shadow: 10px 10px 5px grey;
+  margin: 20px;
+  width: 250px;
+  height: 200px;
+  background-color: rgb(213, 162, 247);
+  border: 50px solid #f1e9ef;
+  outline-style: solid;
+  outline-color: rgb(15, 14, 15);
+  margin-left: 4em;
+  border: 1px solid pink;
+  -webkit-transition: .1s;
+  transition: .1s;
+  transform: rotate(360deg);
+}
+
+h2,
+h3 {
+  
+  color: black(79, 47, 67);
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login,
+.add {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding-top: 40px;
+  background-color: ivory;
+  height: 500px;
+}
+
+.login-button {
+  height: 50px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f0e0f;
+}
+
+
+.add-friend {
+  height: 50px;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #7d8242;
+}
+
+input {
+  height: 50px;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.username,
+.password {
+  margin: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #161614;
+}
